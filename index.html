@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/online-shop-e-commerce-logo_1199645-37307.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <title>E-commerce Web</title>
 </head>
 <body>
@@ -14,9 +16,51 @@
         <div id="logo">
           <h3>E-commerce <span>Website</span></h3>
         </div>
-        
+        <div class="links">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Product</a></li>
+                <li><a href="#"><i class="fas fa-user-tie"></i> About</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div id="menu-btn" onclick="menuToggle()">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
     </header>
+    <div id="navigation">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i> Product</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i> About</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1683141052679-942eb9e77760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D" alt=""> </div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1481437156560-3205f6a55735?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D" alt=""></div>
+                <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/5032ef0edc.js" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: { delay: 3000, },
+            pagination:{
+                el: '.swiper-pagination',
+            },
+        })
+    </script>
 </body>
 </html>
