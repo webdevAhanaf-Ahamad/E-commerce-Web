@@ -23,9 +23,9 @@
     background-color: var(--selection);
 }
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: whitesmoke;
+   display: none;
 }
+
 html, body {
     width: 100vw;
     height: 100vh;
@@ -214,6 +214,7 @@ header .bar {
     margin-top: 1rem;
   width: 100vw;
   height: 100vh;
+  background-color: black;
 }
     .swiper-slide {
       text-align: center;
