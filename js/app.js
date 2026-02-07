@@ -2,7 +2,7 @@ window.onload = function(){
     setTimeout(()=>{        
         const prealoder = document.getElementById('prealoder');
         prealoder.classList.add('hidden');
-    }, 2000);
+    }, 1500);
 }
 function menuToggle() {
     const menubtn = document.getElementById('menu-btn');
@@ -16,3 +16,4 @@ window.addEventListener('keydown', (e)=>{
         menuToggle()
     }
 })
+// alert(window.innerWidth)
